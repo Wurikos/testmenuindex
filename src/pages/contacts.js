@@ -2,7 +2,7 @@ import React from "react";
 import theme from "theme";
 import { Theme, Text } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
-import { Override, StackItem, Stack, Section } from "@quarkly/components";
+import { Override, StackItem, Stack, Section, Menu } from "@quarkly/components";
 export default (() => {
 	return <Theme theme={theme}>
 		<Helmet>
@@ -55,5 +55,6 @@ export default (() => {
 				</StackItem>
 			</Stack>
 		</Section>
+		<Menu />
 	</Theme>;
 });
